@@ -4,6 +4,7 @@
 
 #include <stdio.h>
 #include "cjson.h"
+#include "jsonTool.h"
 
 #if 0
 int main(){
@@ -63,9 +64,14 @@ int main(){
 #endif
 
 int main(){
-    cJSON *monitor = cJSON_CreateObject();
-    cJSON *name = cJSON_CreateString("hello");
-    cJSON_AddItemToObject(monitor, "name", name);
+//    cJSON *monitor = cJSON_CreateObject();
+//    cJSON *name = cJSON_CreateString("hello");
+//    cJSON_AddItemToObject(monitor, "name", name);
+
+    cJSON* monitor = newJson();
+    addString(monitor, "name", "123");
+
     printf("%s\n", cJSON_Print(monitor));
+    cJSON_Delete(monitor);
     return 0;
 }

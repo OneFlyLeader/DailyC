@@ -6,7 +6,9 @@ CMakeFiles/DailyC.dir/cjson/cjson.c.obj: ../cjson/cjson.h
 
 CMakeFiles/DailyC.dir/cjson/cjsonTest.c.obj: ../cjson/cjson.h
 CMakeFiles/DailyC.dir/cjson/cjsonTest.c.obj: ../cjson/cjsonTest.c
+CMakeFiles/DailyC.dir/cjson/cjsonTest.c.obj: ../cjson/jsonTool.h
 
+CMakeFiles/DailyC.dir/cjson/jsonTool.c.obj: ../cjson/cjson.h
 CMakeFiles/DailyC.dir/cjson/jsonTool.c.obj: ../cjson/jsonTool.c
 CMakeFiles/DailyC.dir/cjson/jsonTool.c.obj: ../cjson/jsonTool.h
 
