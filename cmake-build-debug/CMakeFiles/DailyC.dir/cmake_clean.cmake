@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/DailyC.dir/system/stack.c.obj"
+  "CMakeFiles/DailyC.dir/cjson/cjson.c.obj"
+  "CMakeFiles/DailyC.dir/cjson/cjsonTest.c.obj"
+  "CMakeFiles/DailyC.dir/cjson/jsonTool.c.obj"
   "DailyC.exe"
   "DailyC.exe.manifest"
   "DailyC.pdb"

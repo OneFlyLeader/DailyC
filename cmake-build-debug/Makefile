@@ -142,32 +142,86 @@ DailyC/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/build
 .PHONY : DailyC/fast
 
-system/stack.obj: system/stack.c.obj
+cjson/cjson.obj: cjson/cjson.c.obj
 
-.PHONY : system/stack.obj
+.PHONY : cjson/cjson.obj
 
 # target to build an object file
-system/stack.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/system/stack.c.obj
-.PHONY : system/stack.c.obj
+cjson/cjson.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/cjson/cjson.c.obj
+.PHONY : cjson/cjson.c.obj
 
-system/stack.i: system/stack.c.i
+cjson/cjson.i: cjson/cjson.c.i
 
-.PHONY : system/stack.i
+.PHONY : cjson/cjson.i
 
 # target to preprocess a source file
-system/stack.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/system/stack.c.i
-.PHONY : system/stack.c.i
+cjson/cjson.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/cjson/cjson.c.i
+.PHONY : cjson/cjson.c.i
 
-system/stack.s: system/stack.c.s
+cjson/cjson.s: cjson/cjson.c.s
 
-.PHONY : system/stack.s
+.PHONY : cjson/cjson.s
 
 # target to generate assembly for a file
-system/stack.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/system/stack.c.s
-.PHONY : system/stack.c.s
+cjson/cjson.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/cjson/cjson.c.s
+.PHONY : cjson/cjson.c.s
+
+cjson/cjsonTest.obj: cjson/cjsonTest.c.obj
+
+.PHONY : cjson/cjsonTest.obj
+
+# target to build an object file
+cjson/cjsonTest.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/cjson/cjsonTest.c.obj
+.PHONY : cjson/cjsonTest.c.obj
+
+cjson/cjsonTest.i: cjson/cjsonTest.c.i
+
+.PHONY : cjson/cjsonTest.i
+
+# target to preprocess a source file
+cjson/cjsonTest.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/cjson/cjsonTest.c.i
+.PHONY : cjson/cjsonTest.c.i
+
+cjson/cjsonTest.s: cjson/cjsonTest.c.s
+
+.PHONY : cjson/cjsonTest.s
+
+# target to generate assembly for a file
+cjson/cjsonTest.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/cjson/cjsonTest.c.s
+.PHONY : cjson/cjsonTest.c.s
+
+cjson/jsonTool.obj: cjson/jsonTool.c.obj
+
+.PHONY : cjson/jsonTool.obj
+
+# target to build an object file
+cjson/jsonTool.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/cjson/jsonTool.c.obj
+.PHONY : cjson/jsonTool.c.obj
+
+cjson/jsonTool.i: cjson/jsonTool.c.i
+
+.PHONY : cjson/jsonTool.i
+
+# target to preprocess a source file
+cjson/jsonTool.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/cjson/jsonTool.c.i
+.PHONY : cjson/jsonTool.c.i
+
+cjson/jsonTool.s: cjson/jsonTool.c.s
+
+.PHONY : cjson/jsonTool.s
+
+# target to generate assembly for a file
+cjson/jsonTool.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/cjson/jsonTool.c.s
+.PHONY : cjson/jsonTool.c.s
 
 # Help Target
 help:
@@ -178,9 +232,15 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... DailyC
-	@echo ... system/stack.obj
-	@echo ... system/stack.i
-	@echo ... system/stack.s
+	@echo ... cjson/cjson.obj
+	@echo ... cjson/cjson.i
+	@echo ... cjson/cjson.s
+	@echo ... cjson/cjsonTest.obj
+	@echo ... cjson/cjsonTest.i
+	@echo ... cjson/cjsonTest.s
+	@echo ... cjson/jsonTool.obj
+	@echo ... cjson/jsonTool.i
+	@echo ... cjson/jsonTool.s
 .PHONY : help
 
 

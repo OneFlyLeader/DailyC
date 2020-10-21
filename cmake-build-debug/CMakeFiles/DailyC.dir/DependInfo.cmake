@@ -4,7 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "C:/Users/OneFl/Documents/GitHub/DailyC/system/stack.c" "C:/Users/OneFl/Documents/GitHub/DailyC/cmake-build-debug/CMakeFiles/DailyC.dir/system/stack.c.obj"
+  "C:/Users/OneFl/Documents/GitHub/DailyC/cjson/cjson.c" "C:/Users/OneFl/Documents/GitHub/DailyC/cmake-build-debug/CMakeFiles/DailyC.dir/cjson/cjson.c.obj"
+  "C:/Users/OneFl/Documents/GitHub/DailyC/cjson/cjsonTest.c" "C:/Users/OneFl/Documents/GitHub/DailyC/cmake-build-debug/CMakeFiles/DailyC.dir/cjson/cjsonTest.c.obj"
+  "C:/Users/OneFl/Documents/GitHub/DailyC/cjson/jsonTool.c" "C:/Users/OneFl/Documents/GitHub/DailyC/cmake-build-debug/CMakeFiles/DailyC.dir/cjson/jsonTool.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
