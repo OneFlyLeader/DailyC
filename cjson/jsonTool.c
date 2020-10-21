@@ -1,5 +1,6 @@
 /**
-    构建JSON相关的工具方法
+    快速使用 cjson 创建 cJSON 对象
+    首先调用 newJson 获得一个容器，然后就可以使用add方法添加任意项到容器中
     By: LCC
  */
 #include "cjson.h"
