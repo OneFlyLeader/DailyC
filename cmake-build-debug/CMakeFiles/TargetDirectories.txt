@@ -1,0 +1,3 @@
+C:/Users/OneFl/Documents/GitHub/DailyC/cmake-build-debug/CMakeFiles/DailyC.dir
+C:/Users/OneFl/Documents/GitHub/DailyC/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/OneFl/Documents/GitHub/DailyC/cmake-build-debug/CMakeFiles/rebuild_cache.dir
