@@ -142,86 +142,59 @@ DailyC/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/build
 .PHONY : DailyC/fast
 
-cjson/cjson.obj: cjson/cjson.c.obj
+md5/md5.obj: md5/md5.c.obj
 
-.PHONY : cjson/cjson.obj
-
-# target to build an object file
-cjson/cjson.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/cjson/cjson.c.obj
-.PHONY : cjson/cjson.c.obj
-
-cjson/cjson.i: cjson/cjson.c.i
-
-.PHONY : cjson/cjson.i
-
-# target to preprocess a source file
-cjson/cjson.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/cjson/cjson.c.i
-.PHONY : cjson/cjson.c.i
-
-cjson/cjson.s: cjson/cjson.c.s
-
-.PHONY : cjson/cjson.s
-
-# target to generate assembly for a file
-cjson/cjson.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/cjson/cjson.c.s
-.PHONY : cjson/cjson.c.s
-
-cjson/cjsonTest.obj: cjson/cjsonTest.c.obj
-
-.PHONY : cjson/cjsonTest.obj
+.PHONY : md5/md5.obj
 
 # target to build an object file
-cjson/cjsonTest.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/cjson/cjsonTest.c.obj
-.PHONY : cjson/cjsonTest.c.obj
+md5/md5.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/md5/md5.c.obj
+.PHONY : md5/md5.c.obj
 
-cjson/cjsonTest.i: cjson/cjsonTest.c.i
+md5/md5.i: md5/md5.c.i
 
-.PHONY : cjson/cjsonTest.i
+.PHONY : md5/md5.i
 
 # target to preprocess a source file
-cjson/cjsonTest.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/cjson/cjsonTest.c.i
-.PHONY : cjson/cjsonTest.c.i
+md5/md5.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/md5/md5.c.i
+.PHONY : md5/md5.c.i
 
-cjson/cjsonTest.s: cjson/cjsonTest.c.s
+md5/md5.s: md5/md5.c.s
 
-.PHONY : cjson/cjsonTest.s
+.PHONY : md5/md5.s
 
 # target to generate assembly for a file
-cjson/cjsonTest.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/cjson/cjsonTest.c.s
-.PHONY : cjson/cjsonTest.c.s
+md5/md5.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/md5/md5.c.s
+.PHONY : md5/md5.c.s
 
-cjson/jsonTool.obj: cjson/jsonTool.c.obj
+md5/md5Test.obj: md5/md5Test.c.obj
 
-.PHONY : cjson/jsonTool.obj
+.PHONY : md5/md5Test.obj
 
 # target to build an object file
-cjson/jsonTool.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/cjson/jsonTool.c.obj
-.PHONY : cjson/jsonTool.c.obj
+md5/md5Test.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/md5/md5Test.c.obj
+.PHONY : md5/md5Test.c.obj
 
-cjson/jsonTool.i: cjson/jsonTool.c.i
+md5/md5Test.i: md5/md5Test.c.i
 
-.PHONY : cjson/jsonTool.i
+.PHONY : md5/md5Test.i
 
 # target to preprocess a source file
-cjson/jsonTool.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/cjson/jsonTool.c.i
-.PHONY : cjson/jsonTool.c.i
+md5/md5Test.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/md5/md5Test.c.i
+.PHONY : md5/md5Test.c.i
 
-cjson/jsonTool.s: cjson/jsonTool.c.s
+md5/md5Test.s: md5/md5Test.c.s
 
-.PHONY : cjson/jsonTool.s
+.PHONY : md5/md5Test.s
 
 # target to generate assembly for a file
-cjson/jsonTool.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/cjson/jsonTool.c.s
-.PHONY : cjson/jsonTool.c.s
+md5/md5Test.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/md5/md5Test.c.s
+.PHONY : md5/md5Test.c.s
 
 # Help Target
 help:
@@ -232,15 +205,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... DailyC
-	@echo ... cjson/cjson.obj
-	@echo ... cjson/cjson.i
-	@echo ... cjson/cjson.s
-	@echo ... cjson/cjsonTest.obj
-	@echo ... cjson/cjsonTest.i
-	@echo ... cjson/cjsonTest.s
-	@echo ... cjson/jsonTool.obj
-	@echo ... cjson/jsonTool.i
-	@echo ... cjson/jsonTool.s
+	@echo ... md5/md5.obj
+	@echo ... md5/md5.i
+	@echo ... md5/md5.s
+	@echo ... md5/md5Test.obj
+	@echo ... md5/md5Test.i
+	@echo ... md5/md5Test.s
 .PHONY : help
 
 

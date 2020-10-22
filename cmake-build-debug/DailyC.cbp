@@ -76,19 +76,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/OneFl/Documents/GitHub/DailyC/cjson/cjson.c">
+		<Unit filename="C:/Users/OneFl/Documents/GitHub/DailyC/md5/md5.c">
 			<Option target="DailyC"/>
 		</Unit>
-		<Unit filename="C:/Users/OneFl/Documents/GitHub/DailyC/cjson/cjson.h">
+		<Unit filename="C:/Users/OneFl/Documents/GitHub/DailyC/md5/md5.h">
 			<Option target="DailyC"/>
 		</Unit>
-		<Unit filename="C:/Users/OneFl/Documents/GitHub/DailyC/cjson/cjsonTest.c">
-			<Option target="DailyC"/>
-		</Unit>
-		<Unit filename="C:/Users/OneFl/Documents/GitHub/DailyC/cjson/jsonTool.c">
-			<Option target="DailyC"/>
-		</Unit>
-		<Unit filename="C:/Users/OneFl/Documents/GitHub/DailyC/cjson/jsonTool.h">
+		<Unit filename="C:/Users/OneFl/Documents/GitHub/DailyC/md5/md5Test.c">
 			<Option target="DailyC"/>
 		</Unit>
 		<Unit filename="C:/Users/OneFl/Documents/GitHub/DailyC/CMakeLists.txt">

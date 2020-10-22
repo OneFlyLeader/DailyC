@@ -88,5 +88,6 @@ int main(){
     cJSON* array = cJSON_AddArrayToObject(json, "5");
     cJSON_AddItemToArray(array, cJSON_CreateString("789"));
     printf("%s\n", cJSON_Print(json));
+    cJSON_Delete(json);
     return 0;
 }
