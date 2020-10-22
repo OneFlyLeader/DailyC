@@ -1,10 +1,6 @@
-//
-// Created by OneFl on 2020/10/22.
-//
-
 #ifndef DAILYC_MD5_H
 #define DAILYC_MD5_H
 
-unsigned int* Md5(const char* head, const unsigned int len);
+void Md5(char* head, const unsigned int len, unsigned int* res);
 
 #endif //DAILYC_MD5_H

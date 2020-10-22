@@ -120,9 +120,12 @@ int strCpy(char* dst, const char* src, const unsigned int dstLen, const unsigned
  * 计算MD5
  * @return
  */
-unsigned int* Md5(const char* head, const unsigned int len){
+void Md5(char* head, const unsigned int len, unsigned int* res){
     // 只能处理2G以内的文件
-    if(len & 0x80000000 > 0) return NULL;
+    if(len & 0x80000000 > 0) {
+        res = NULL;
+        return ;
+    }
 
     A=0x67452301,B=0xefcdab89,C=0x98badcfe,D=0x10325476; //初始化链接变量(魔术数字)
     // 计算文件长度
@@ -144,14 +147,16 @@ unsigned int* Md5(const char* head, const unsigned int len){
         src += writeLen;
         memset(x,0,64);
     }
-    ((char*)x)[len%64]=128;  //文件结束补1,补0操作,128二进制即10000000
-    if(len%64>55) {
+    ((char*)x)[len % 64]=128;  //文件结束补1,补0操作,128二进制即10000000
+    if(len % 64 > 55) {
         md5();
         memset(x, 0, 64);
     }
     memcpy(x+14,flen,8);    //文件末尾加入原文件的bit长度
     md5();
 
-    unsigned int res[] = {PP(A),PP(B),PP(C),PP(D)};
-    return res;// 返回值始终是128位 16字节的哈希值 4个unsigned int值
+    *(res) = PP(A);
+    *(res+1) = PP(B);
+    *(res+2) = PP(C);
+    *(res+3) = PP(C);
 }

@@ -6,6 +6,8 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/OneFl/Documents/GitHub/DailyC/md5/md5.h
+
 C:/Users/OneFl/Documents/GitHub/DailyC/md5/md5Test.c
 stdio.h
 -
@@ -13,4 +15,6 @@ stdlib.h
 -
 string.h
 -
+md5.h
+C:/Users/OneFl/Documents/GitHub/DailyC/md5/md5.h
 
