@@ -1,6 +1,6 @@
 /**
     快速使用 cjson 创建 cJSON 对象
-    首先调用 newJson 获得一个容器，然后就可以使用add方法添加任意项到容器中
+    首先调用 newJson 获得一个容器，然后就可以使用add方法添加任意项到容器中，使用完需要删除json结构
     By: LCC
  */
 #include "cjson.h"
@@ -14,29 +14,39 @@ cJSON* newJson(){
     return cJSON_CreateObject();
 }
 
-int errorJson(cJSON* json){
-    cJSON_Delete(json);
+/**
+ * 创建数组
+ * @return
+ */
+cJSON* newArray(){
+    return cJSON_CreateArray();
+}
+
+int errorJson(cJSON* json, cJSON_bool isDelete){
+    if(isDelete)
+        cJSON_Delete(json);
     return cJSON_False;
 }
 
 /**
  * 添加对象到数组或容器(object)中
- * @param container
- * @param name
- * @param item
+ * @param container 存储带的容器
+ * @param name 标签名
+ * @param item 标签值
+ * @param isDelete true 如果出错就删除对象；false 出错不删除对象；
  * @return
  */
-int addObject(cJSON* container, char* name, cJSON* item){
-    if (item == NULL) {
-        return errorJson(item);
+int addObject(cJSON* container, char* name, cJSON* item, cJSON_bool isDelete){
+    if (NULL == item || NULL == container) {
+        return errorJson(item, isDelete);
     }
     if(cJSON_IsObject(container)) {
-        if(NULL == name) return errorJson(item);
+        if(NULL == name) return errorJson(item, isDelete);
         return cJSON_AddItemToObject(container, name, item);
     }else if(cJSON_IsArray(container)){
         return cJSON_AddItemToArray(container, item);
     }else{
-        return errorJson(item);
+        return errorJson(item, isDelete);
     }
 }
 
@@ -49,7 +59,7 @@ int addObject(cJSON* container, char* name, cJSON* item){
  */
 int addString(cJSON* container, char* itemName, char* value){
     cJSON* jsonStr = cJSON_CreateString(value);
-    return addObject(container, itemName, jsonStr);
+    return addObject(container, itemName, jsonStr, cJSON_True);
 }
 
 /**
@@ -61,7 +71,7 @@ int addString(cJSON* container, char* itemName, char* value){
  */
 int addNumber(cJSON* container, char* itemName, double value){
     cJSON* jsonNum = cJSON_CreateNumber(value);
-    return addObject(container, itemName, jsonNum);
+    return addObject(container, itemName, jsonNum, cJSON_True);
 }
 
 /**
@@ -72,8 +82,24 @@ int addNumber(cJSON* container, char* itemName, double value){
  * @return
  */
 int addArray(cJSON* container, char* itemName, cJSON* jsonArray){
-    jsonArray = cJSON_CreateArray();
-    return addObject(container, itemName, jsonArray);
+    if(!cJSON_IsArray(jsonArray)){
+        return cJSON_False;
+    }
+    return addObject(container, itemName, jsonArray, cJSON_False);
+}
+
+/**
+ * 添加JSON对象
+ * @param container
+ * @param itemName
+ * @param other
+ * @return
+ */
+int addJson(cJSON* container, char* itemName, cJSON* other){
+    if(!cJSON_IsObject(other)){
+        return cJSON_False;
+    }
+    return addObject(container, itemName, other, cJSON_False);
 }
 
 /**
@@ -85,7 +111,7 @@ int addArray(cJSON* container, char* itemName, cJSON* jsonArray){
  */
 int addBool(cJSON* container, char* itemName, cJSON_bool bool){
     cJSON* jsonBool = cJSON_CreateBool(bool);
-    return addObject(container, itemName, jsonBool);
+    return addObject(container, itemName, jsonBool, cJSON_True);
 }
 
 /**
@@ -95,4 +121,12 @@ int addBool(cJSON* container, char* itemName, cJSON_bool bool){
  */
 char* toString(cJSON* json){
     return cJSON_Print(json);
+}
+
+/**
+ * 删除cJSON结构
+ * @param json
+ */
+void deleteJson(cJSON* json){
+    cJSON_Delete(json);
 }

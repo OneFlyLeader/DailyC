@@ -64,14 +64,18 @@ int main(){
 #endif
 
 int main(){
-//    cJSON *monitor = cJSON_CreateObject();
-//    cJSON *name = cJSON_CreateString("hello");
-//    cJSON_AddItemToObject(monitor, "name", name);
-
-    cJSON* monitor = newJson();
-    addString(monitor, "name", "123");
-
-    printf("%s\n", cJSON_Print(monitor));
-    cJSON_Delete(monitor);
+    cJSON* json = newJson();
+    addString(json, "item1", "hello");
+    addBool(json, "item2", cJSON_True);
+    addNumber(json, "item3", 12);
+    addNumber(json,"item4",12.12);
+    cJSON* array = newArray();
+    addArray(json, "item5", array);
+    addString(array, NULL, "world");
+    addNumber(array, NULL, 123);
+    cJSON* jsonOther = newJson();
+    addJson(json, "item6", jsonOther);
+    addString(jsonOther, "item7", "world");
+    printf("%s\n", toString(json));
     return 0;
 }
