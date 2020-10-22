@@ -37,11 +37,10 @@ int errorJson(cJSON* json, cJSON_bool isDelete){
  * @return
  */
 int addObject(cJSON* container, char* name, cJSON* item, cJSON_bool isDelete){
-    if (NULL == item || NULL == container) {
+    if (NULL == container) {
         return errorJson(item, isDelete);
     }
     if(cJSON_IsObject(container)) {
-        if(NULL == name) return errorJson(item, isDelete);
         return cJSON_AddItemToObject(container, name, item);
     }else if(cJSON_IsArray(container)){
         return cJSON_AddItemToArray(container, item);

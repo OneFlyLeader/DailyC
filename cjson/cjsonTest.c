@@ -64,18 +64,29 @@ int main(){
 #endif
 
 int main(){
-    cJSON* json = newJson();
-    addString(json, "item1", "hello");
-    addBool(json, "item2", cJSON_True);
-    addNumber(json, "item3", 12);
-    addNumber(json,"item4",12.12);
-    cJSON* array = newArray();
-    addArray(json, "item5", array);
-    addString(array, NULL, "world");
-    addNumber(array, NULL, 123);
-    cJSON* jsonOther = newJson();
-    addJson(json, "item6", jsonOther);
-    addString(jsonOther, "item7", "world");
-    printf("%s\n", toString(json));
+//    cJSON* json = newJson();
+//    addString(json, "item1", "hello");
+//    addBool(json, "item2", cJSON_True);
+//    addNumber(json, "item3", 12);
+//    addNumber(json,"item4",12.12);
+//    cJSON* array = newArray();
+//    addArray(json, "item5", array);
+//    addString(array, NULL, "world");
+//    addNumber(array, NULL, 123);
+//    cJSON* jsonOther = newJson();
+//    addJson(json, "item6", jsonOther);
+//    addString(jsonOther, "item7", "world");
+//    deleteJson(json);
+//    printf("%s\n", toString(json));
+
+    cJSON* json = cJSON_CreateObject();
+    cJSON_AddItemToObject(json, "1", cJSON_CreateNumber(123));
+    cJSON_AddItemToObject(json, "2", cJSON_CreateString("123"));
+    cJSON* other = cJSON_CreateObject();
+    cJSON_AddItemToObject(json, "3", other);
+    cJSON_AddItemToObject(other, "4", cJSON_CreateString("456"));
+    cJSON* array = cJSON_AddArrayToObject(json, "5");
+    cJSON_AddItemToArray(array, cJSON_CreateString("789"));
+    printf("%s\n", cJSON_Print(json));
     return 0;
 }
