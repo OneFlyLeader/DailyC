@@ -158,5 +158,5 @@ void Md5(char* head, const unsigned int len, unsigned int* res){
     *(res) = PP(A);
     *(res+1) = PP(B);
     *(res+2) = PP(C);
-    *(res+3) = PP(C);
+    *(res+3) = PP(D);
 }

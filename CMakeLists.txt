@@ -17,4 +17,6 @@ set(PROJECT_NAME DailyC)
 #add_executable(${PROJECT_NAME} cjson/cjsonTest.c ${CJSON} ${JSONTOOL})
 
 # 测试md5
-add_executable(${PROJECT_NAME} md5/md5Test.c md5/md5.c md5/md5.h)
+#add_executable(${PROJECT_NAME} md5/md5Test.c md5/md5.c md5/md5.h)
+
+# 测试OOP
