@@ -142,59 +142,32 @@ DailyC/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/build
 .PHONY : DailyC/fast
 
-md5/md5.obj: md5/md5.c.obj
+system/endian.obj: system/endian.c.obj
 
-.PHONY : md5/md5.obj
-
-# target to build an object file
-md5/md5.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/md5/md5.c.obj
-.PHONY : md5/md5.c.obj
-
-md5/md5.i: md5/md5.c.i
-
-.PHONY : md5/md5.i
-
-# target to preprocess a source file
-md5/md5.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/md5/md5.c.i
-.PHONY : md5/md5.c.i
-
-md5/md5.s: md5/md5.c.s
-
-.PHONY : md5/md5.s
-
-# target to generate assembly for a file
-md5/md5.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/md5/md5.c.s
-.PHONY : md5/md5.c.s
-
-md5/md5Test.obj: md5/md5Test.c.obj
-
-.PHONY : md5/md5Test.obj
+.PHONY : system/endian.obj
 
 # target to build an object file
-md5/md5Test.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/md5/md5Test.c.obj
-.PHONY : md5/md5Test.c.obj
+system/endian.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/system/endian.c.obj
+.PHONY : system/endian.c.obj
 
-md5/md5Test.i: md5/md5Test.c.i
+system/endian.i: system/endian.c.i
 
-.PHONY : md5/md5Test.i
+.PHONY : system/endian.i
 
 # target to preprocess a source file
-md5/md5Test.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/md5/md5Test.c.i
-.PHONY : md5/md5Test.c.i
+system/endian.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/system/endian.c.i
+.PHONY : system/endian.c.i
 
-md5/md5Test.s: md5/md5Test.c.s
+system/endian.s: system/endian.c.s
 
-.PHONY : md5/md5Test.s
+.PHONY : system/endian.s
 
 # target to generate assembly for a file
-md5/md5Test.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/md5/md5Test.c.s
-.PHONY : md5/md5Test.c.s
+system/endian.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/system/endian.c.s
+.PHONY : system/endian.c.s
 
 # Help Target
 help:
@@ -205,12 +178,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... DailyC
-	@echo ... md5/md5.obj
-	@echo ... md5/md5.i
-	@echo ... md5/md5.s
-	@echo ... md5/md5Test.obj
-	@echo ... md5/md5Test.i
-	@echo ... md5/md5Test.s
+	@echo ... system/endian.obj
+	@echo ... system/endian.i
+	@echo ... system/endian.s
 .PHONY : help
 
 
