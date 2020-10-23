@@ -142,59 +142,113 @@ DailyC/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/build
 .PHONY : DailyC/fast
 
-md5/md5.obj: md5/md5.c.obj
+oop/main.obj: oop/main.c.obj
 
-.PHONY : md5/md5.obj
-
-# target to build an object file
-md5/md5.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/md5/md5.c.obj
-.PHONY : md5/md5.c.obj
-
-md5/md5.i: md5/md5.c.i
-
-.PHONY : md5/md5.i
-
-# target to preprocess a source file
-md5/md5.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/md5/md5.c.i
-.PHONY : md5/md5.c.i
-
-md5/md5.s: md5/md5.c.s
-
-.PHONY : md5/md5.s
-
-# target to generate assembly for a file
-md5/md5.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/md5/md5.c.s
-.PHONY : md5/md5.c.s
-
-md5/md5Main.obj: md5/md5Main.c.obj
-
-.PHONY : md5/md5Main.obj
+.PHONY : oop/main.obj
 
 # target to build an object file
-md5/md5Main.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/md5/md5Main.c.obj
-.PHONY : md5/md5Main.c.obj
+oop/main.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/oop/main.c.obj
+.PHONY : oop/main.c.obj
 
-md5/md5Main.i: md5/md5Main.c.i
+oop/main.i: oop/main.c.i
 
-.PHONY : md5/md5Main.i
+.PHONY : oop/main.i
 
 # target to preprocess a source file
-md5/md5Main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/md5/md5Main.c.i
-.PHONY : md5/md5Main.c.i
+oop/main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/oop/main.c.i
+.PHONY : oop/main.c.i
 
-md5/md5Main.s: md5/md5Main.c.s
+oop/main.s: oop/main.c.s
 
-.PHONY : md5/md5Main.s
+.PHONY : oop/main.s
 
 # target to generate assembly for a file
-md5/md5Main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/md5/md5Main.c.s
-.PHONY : md5/md5Main.c.s
+oop/main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/oop/main.c.s
+.PHONY : oop/main.c.s
+
+oop/person.obj: oop/person.c.obj
+
+.PHONY : oop/person.obj
+
+# target to build an object file
+oop/person.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/oop/person.c.obj
+.PHONY : oop/person.c.obj
+
+oop/person.i: oop/person.c.i
+
+.PHONY : oop/person.i
+
+# target to preprocess a source file
+oop/person.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/oop/person.c.i
+.PHONY : oop/person.c.i
+
+oop/person.s: oop/person.c.s
+
+.PHONY : oop/person.s
+
+# target to generate assembly for a file
+oop/person.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/oop/person.c.s
+.PHONY : oop/person.c.s
+
+oop/senior.obj: oop/senior.c.obj
+
+.PHONY : oop/senior.obj
+
+# target to build an object file
+oop/senior.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/oop/senior.c.obj
+.PHONY : oop/senior.c.obj
+
+oop/senior.i: oop/senior.c.i
+
+.PHONY : oop/senior.i
+
+# target to preprocess a source file
+oop/senior.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/oop/senior.c.i
+.PHONY : oop/senior.c.i
+
+oop/senior.s: oop/senior.c.s
+
+.PHONY : oop/senior.s
+
+# target to generate assembly for a file
+oop/senior.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/oop/senior.c.s
+.PHONY : oop/senior.c.s
+
+oop/student.obj: oop/student.c.obj
+
+.PHONY : oop/student.obj
+
+# target to build an object file
+oop/student.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/oop/student.c.obj
+.PHONY : oop/student.c.obj
+
+oop/student.i: oop/student.c.i
+
+.PHONY : oop/student.i
+
+# target to preprocess a source file
+oop/student.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/oop/student.c.i
+.PHONY : oop/student.c.i
+
+oop/student.s: oop/student.c.s
+
+.PHONY : oop/student.s
+
+# target to generate assembly for a file
+oop/student.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/oop/student.c.s
+.PHONY : oop/student.c.s
 
 # Help Target
 help:
@@ -205,12 +259,18 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... DailyC
-	@echo ... md5/md5.obj
-	@echo ... md5/md5.i
-	@echo ... md5/md5.s
-	@echo ... md5/md5Main.obj
-	@echo ... md5/md5Main.i
-	@echo ... md5/md5Main.s
+	@echo ... oop/main.obj
+	@echo ... oop/main.i
+	@echo ... oop/main.s
+	@echo ... oop/person.obj
+	@echo ... oop/person.i
+	@echo ... oop/person.s
+	@echo ... oop/senior.obj
+	@echo ... oop/senior.i
+	@echo ... oop/senior.s
+	@echo ... oop/student.obj
+	@echo ... oop/student.i
+	@echo ... oop/student.s
 .PHONY : help
 
 

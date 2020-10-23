@@ -4,8 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "C:/Users/OneFl/Documents/GitHub/DailyC/md5/md5.c" "C:/Users/OneFl/Documents/GitHub/DailyC/cmake-build-debug/CMakeFiles/DailyC.dir/md5/md5.c.obj"
-  "C:/Users/OneFl/Documents/GitHub/DailyC/md5/md5Main.c" "C:/Users/OneFl/Documents/GitHub/DailyC/cmake-build-debug/CMakeFiles/DailyC.dir/md5/md5Main.c.obj"
+  "C:/Users/OneFl/Documents/GitHub/DailyC/oop/main.c" "C:/Users/OneFl/Documents/GitHub/DailyC/cmake-build-debug/CMakeFiles/DailyC.dir/oop/main.c.obj"
+  "C:/Users/OneFl/Documents/GitHub/DailyC/oop/person.c" "C:/Users/OneFl/Documents/GitHub/DailyC/cmake-build-debug/CMakeFiles/DailyC.dir/oop/person.c.obj"
+  "C:/Users/OneFl/Documents/GitHub/DailyC/oop/senior.c" "C:/Users/OneFl/Documents/GitHub/DailyC/cmake-build-debug/CMakeFiles/DailyC.dir/oop/senior.c.obj"
+  "C:/Users/OneFl/Documents/GitHub/DailyC/oop/student.c" "C:/Users/OneFl/Documents/GitHub/DailyC/cmake-build-debug/CMakeFiles/DailyC.dir/oop/student.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

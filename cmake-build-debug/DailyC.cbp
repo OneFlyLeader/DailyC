@@ -76,13 +76,25 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/OneFl/Documents/GitHub/DailyC/md5/md5.c">
+		<Unit filename="C:/Users/OneFl/Documents/GitHub/DailyC/oop/main.c">
 			<Option target="DailyC"/>
 		</Unit>
-		<Unit filename="C:/Users/OneFl/Documents/GitHub/DailyC/md5/md5.h">
+		<Unit filename="C:/Users/OneFl/Documents/GitHub/DailyC/oop/person.c">
 			<Option target="DailyC"/>
 		</Unit>
-		<Unit filename="C:/Users/OneFl/Documents/GitHub/DailyC/md5/md5Main.c">
+		<Unit filename="C:/Users/OneFl/Documents/GitHub/DailyC/oop/person.h">
+			<Option target="DailyC"/>
+		</Unit>
+		<Unit filename="C:/Users/OneFl/Documents/GitHub/DailyC/oop/senior.c">
+			<Option target="DailyC"/>
+		</Unit>
+		<Unit filename="C:/Users/OneFl/Documents/GitHub/DailyC/oop/senior.h">
+			<Option target="DailyC"/>
+		</Unit>
+		<Unit filename="C:/Users/OneFl/Documents/GitHub/DailyC/oop/student.c">
+			<Option target="DailyC"/>
+		</Unit>
+		<Unit filename="C:/Users/OneFl/Documents/GitHub/DailyC/oop/student.h">
 			<Option target="DailyC"/>
 		</Unit>
 		<Unit filename="C:/Users/OneFl/Documents/GitHub/DailyC/CMakeLists.txt">

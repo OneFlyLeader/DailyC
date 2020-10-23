@@ -6,15 +6,23 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/OneFl/Documents/GitHub/DailyC/md5/md5.h
-
-C:/Users/OneFl/Documents/GitHub/DailyC/md5/md5Main.c
+C:/Users/OneFl/Documents/GitHub/DailyC/oop/main.c
+person.h
+C:/Users/OneFl/Documents/GitHub/DailyC/oop/person.h
+student.h
+C:/Users/OneFl/Documents/GitHub/DailyC/oop/student.h
+senior.h
+C:/Users/OneFl/Documents/GitHub/DailyC/oop/senior.h
 stdio.h
 -
-stdlib.h
--
-string.h
--
-md5.h
-C:/Users/OneFl/Documents/GitHub/DailyC/md5/md5.h
+
+C:/Users/OneFl/Documents/GitHub/DailyC/oop/person.h
+
+C:/Users/OneFl/Documents/GitHub/DailyC/oop/senior.h
+student.h
+C:/Users/OneFl/Documents/GitHub/DailyC/oop/student.h
+
+C:/Users/OneFl/Documents/GitHub/DailyC/oop/student.h
+person.h
+C:/Users/OneFl/Documents/GitHub/DailyC/oop/person.h
 

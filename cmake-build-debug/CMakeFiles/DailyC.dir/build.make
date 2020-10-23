@@ -76,47 +76,77 @@ include CMakeFiles/DailyC.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/DailyC.dir/flags.make
 
-CMakeFiles/DailyC.dir/md5/md5Main.c.obj: CMakeFiles/DailyC.dir/flags.make
-CMakeFiles/DailyC.dir/md5/md5Main.c.obj: ../md5/md5Main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\OneFl\Documents\GitHub\DailyC\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/DailyC.dir/md5/md5Main.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\DailyC.dir\md5\md5Main.c.obj   -c C:\Users\OneFl\Documents\GitHub\DailyC\md5\md5Main.c
+CMakeFiles/DailyC.dir/oop/main.c.obj: CMakeFiles/DailyC.dir/flags.make
+CMakeFiles/DailyC.dir/oop/main.c.obj: ../oop/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\OneFl\Documents\GitHub\DailyC\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/DailyC.dir/oop/main.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\DailyC.dir\oop\main.c.obj   -c C:\Users\OneFl\Documents\GitHub\DailyC\oop\main.c
 
-CMakeFiles/DailyC.dir/md5/md5Main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/DailyC.dir/md5/md5Main.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\OneFl\Documents\GitHub\DailyC\md5\md5Main.c > CMakeFiles\DailyC.dir\md5\md5Main.c.i
+CMakeFiles/DailyC.dir/oop/main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/DailyC.dir/oop/main.c.i"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\OneFl\Documents\GitHub\DailyC\oop\main.c > CMakeFiles\DailyC.dir\oop\main.c.i
 
-CMakeFiles/DailyC.dir/md5/md5Main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/DailyC.dir/md5/md5Main.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\OneFl\Documents\GitHub\DailyC\md5\md5Main.c -o CMakeFiles\DailyC.dir\md5\md5Main.c.s
+CMakeFiles/DailyC.dir/oop/main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/DailyC.dir/oop/main.c.s"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\OneFl\Documents\GitHub\DailyC\oop\main.c -o CMakeFiles\DailyC.dir\oop\main.c.s
 
-CMakeFiles/DailyC.dir/md5/md5.c.obj: CMakeFiles/DailyC.dir/flags.make
-CMakeFiles/DailyC.dir/md5/md5.c.obj: ../md5/md5.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\OneFl\Documents\GitHub\DailyC\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/DailyC.dir/md5/md5.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\DailyC.dir\md5\md5.c.obj   -c C:\Users\OneFl\Documents\GitHub\DailyC\md5\md5.c
+CMakeFiles/DailyC.dir/oop/person.c.obj: CMakeFiles/DailyC.dir/flags.make
+CMakeFiles/DailyC.dir/oop/person.c.obj: ../oop/person.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\OneFl\Documents\GitHub\DailyC\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/DailyC.dir/oop/person.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\DailyC.dir\oop\person.c.obj   -c C:\Users\OneFl\Documents\GitHub\DailyC\oop\person.c
 
-CMakeFiles/DailyC.dir/md5/md5.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/DailyC.dir/md5/md5.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\OneFl\Documents\GitHub\DailyC\md5\md5.c > CMakeFiles\DailyC.dir\md5\md5.c.i
+CMakeFiles/DailyC.dir/oop/person.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/DailyC.dir/oop/person.c.i"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\OneFl\Documents\GitHub\DailyC\oop\person.c > CMakeFiles\DailyC.dir\oop\person.c.i
 
-CMakeFiles/DailyC.dir/md5/md5.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/DailyC.dir/md5/md5.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\OneFl\Documents\GitHub\DailyC\md5\md5.c -o CMakeFiles\DailyC.dir\md5\md5.c.s
+CMakeFiles/DailyC.dir/oop/person.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/DailyC.dir/oop/person.c.s"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\OneFl\Documents\GitHub\DailyC\oop\person.c -o CMakeFiles\DailyC.dir\oop\person.c.s
+
+CMakeFiles/DailyC.dir/oop/student.c.obj: CMakeFiles/DailyC.dir/flags.make
+CMakeFiles/DailyC.dir/oop/student.c.obj: ../oop/student.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\OneFl\Documents\GitHub\DailyC\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/DailyC.dir/oop/student.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\DailyC.dir\oop\student.c.obj   -c C:\Users\OneFl\Documents\GitHub\DailyC\oop\student.c
+
+CMakeFiles/DailyC.dir/oop/student.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/DailyC.dir/oop/student.c.i"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\OneFl\Documents\GitHub\DailyC\oop\student.c > CMakeFiles\DailyC.dir\oop\student.c.i
+
+CMakeFiles/DailyC.dir/oop/student.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/DailyC.dir/oop/student.c.s"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\OneFl\Documents\GitHub\DailyC\oop\student.c -o CMakeFiles\DailyC.dir\oop\student.c.s
+
+CMakeFiles/DailyC.dir/oop/senior.c.obj: CMakeFiles/DailyC.dir/flags.make
+CMakeFiles/DailyC.dir/oop/senior.c.obj: ../oop/senior.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\OneFl\Documents\GitHub\DailyC\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/DailyC.dir/oop/senior.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\DailyC.dir\oop\senior.c.obj   -c C:\Users\OneFl\Documents\GitHub\DailyC\oop\senior.c
+
+CMakeFiles/DailyC.dir/oop/senior.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/DailyC.dir/oop/senior.c.i"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\OneFl\Documents\GitHub\DailyC\oop\senior.c > CMakeFiles\DailyC.dir\oop\senior.c.i
+
+CMakeFiles/DailyC.dir/oop/senior.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/DailyC.dir/oop/senior.c.s"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\OneFl\Documents\GitHub\DailyC\oop\senior.c -o CMakeFiles\DailyC.dir\oop\senior.c.s
 
 # Object files for target DailyC
 DailyC_OBJECTS = \
-"CMakeFiles/DailyC.dir/md5/md5Main.c.obj" \
-"CMakeFiles/DailyC.dir/md5/md5.c.obj"
+"CMakeFiles/DailyC.dir/oop/main.c.obj" \
+"CMakeFiles/DailyC.dir/oop/person.c.obj" \
+"CMakeFiles/DailyC.dir/oop/student.c.obj" \
+"CMakeFiles/DailyC.dir/oop/senior.c.obj"
 
 # External object files for target DailyC
 DailyC_EXTERNAL_OBJECTS =
 
-DailyC.exe: CMakeFiles/DailyC.dir/md5/md5Main.c.obj
-DailyC.exe: CMakeFiles/DailyC.dir/md5/md5.c.obj
+DailyC.exe: CMakeFiles/DailyC.dir/oop/main.c.obj
+DailyC.exe: CMakeFiles/DailyC.dir/oop/person.c.obj
+DailyC.exe: CMakeFiles/DailyC.dir/oop/student.c.obj
+DailyC.exe: CMakeFiles/DailyC.dir/oop/senior.c.obj
 DailyC.exe: CMakeFiles/DailyC.dir/build.make
 DailyC.exe: CMakeFiles/DailyC.dir/linklibs.rsp
 DailyC.exe: CMakeFiles/DailyC.dir/objects1.rsp
 DailyC.exe: CMakeFiles/DailyC.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\OneFl\Documents\GitHub\DailyC\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable DailyC.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\OneFl\Documents\GitHub\DailyC\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable DailyC.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\DailyC.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
