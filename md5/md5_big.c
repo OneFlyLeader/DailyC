@@ -1,6 +1,13 @@
-#include "md5.h"
+//
+// Created by OneFl on 2020/10/23.
+//
+
+#include "md5_big.h"
 #include <string.h>
 
+/**
+ * 小端系统
+ */
 #define F(x, y, z) (((x) & (y)) | ((~x) & (z)))
 #define G(x, y, z) (((x) & (z)) | ((y) & (~z)))
 #define H(x, y, z) ((x) ^ (y) ^ (z))
@@ -117,6 +124,17 @@ int strCpy(char* dst, const char* src, const unsigned int dstLen, const unsigned
 }
 
 /**
+ * 大小端转换
+ */
+int reserval(unsigned int* array, int size){
+    unsigned int tmp = 0;
+    for(int i = 0; i < size; i++){
+        tmp = *(array + i);
+        *(array + i) = PP(tmp);
+    }
+}
+
+/**
  * 计算MD5
  * @return
  */
@@ -141,6 +159,7 @@ void Md5(char* head, const unsigned int len, unsigned int* res){
     src += writeLen;
 
     for(int i = 0; i < len/64; i++){//循环运算直至文件结束
+        reserval(x, 16);
         md5();
         memset(x,0,64);
         writeLen = strCpy((char*)x, src, 64, reserve);
@@ -149,9 +168,12 @@ void Md5(char* head, const unsigned int len, unsigned int* res){
     }
     ((char*)x)[len % 64]=128;  //文件结束补1,补0操作,128二进制即10000000
     if(len % 64 > 55) {
+        reserval(x, 16);
         md5();
         memset(x, 0, 64);
     }
+
+    reserval(x, 16);
     memcpy(x+14,flen,8);    //文件末尾加入原文件的bit长度
     md5();
 

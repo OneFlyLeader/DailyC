@@ -1,12 +1,9 @@
-//
-// Created by OneFl on 2020/10/22.
-//
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 #include "md5_little.h"
+#include <string.h>
 
-#if 0
+/**
+ * 小端系统
+ */
 #define F(x, y, z) (((x) & (y)) | ((~x) & (z)))
 #define G(x, y, z) (((x) & (z)) | ((y) & (~z)))
 #define H(x, y, z) ((x) ^ (y) ^ (z))
@@ -105,63 +102,64 @@ void md5(){                 //MD5核心算法,供64轮
     D += d;
 }
 
-int main(){
-    FILE *fp = NULL;
-    if (!(fp=fopen("../md5/test.txt","rb"))) {
-        printf("Can not open this file!\n");
-        return -1;
-    }  //以二进制打开文件
-    fseek(fp, 0, SEEK_END);  //文件指针转到文件末尾
-    unsigned int len = 0;
-    if((len=ftell(fp))==-1) {
-        printf("Sorry! Can not calculate files which larger than 2 GB!\n");
-        fclose(fp);
-        return -1;
-    }  //ftell函数返回long,最大为2GB,超出返回-1
-    rewind(fp);  //文件指针复位到文件头
+/**
+ * 从src拷贝到dst，选择dstLen和srcLen中的最小值作为最终拷贝长度
+ * 返回值为拷贝的长度
+ * @param dst
+ * @param src
+ * @param dstLen
+ * @param srcLen
+ * @return 拷贝的长度
+ */
+int strCpy(char* dst, const char* src, const unsigned int dstLen, const unsigned int srcLen){
+    int len = (srcLen < dstLen) ? srcLen : dstLen;
+    for(int i = 0; i < len; i++){
+        dst[i] = src[i];
+    }
+    return len;
+}
 
-    A=0x67452301,B=0xefcdab89,C=0x98badcfe,D=0x10325476; //初始化链接变量
+/**
+ * 计算MD5
+ * @return
+ */
+void Md5(char* head, const unsigned int len, unsigned int* res){
+    // 只能处理2G以内的文件
+    if((len & 0x80000000) > 0) {
+        res = NULL;
+        return ;
+    }
 
-    unsigned int flen[2];
+    A=0x67452301,B=0xefcdab89,C=0x98badcfe,D=0x10325476; //初始化链接变量(魔术数字)
+    // 计算文件长度
     flen[1]=len / 0x20000000;
     flen[0]=(len % 0x20000000) * 8;
 
-    memset(x,0,64);   //初始化x数组为0 512bit/8=64字节
-    fread(&x,4,16,fp);  //以4字节为一组,读取16组数据
+    int reserve = len;
+    char* src = head;
+    int writeLen = 0;
+    memset(x, 0, 64);   //初始化x数组为0 512bit/8=64字节
+    writeLen = strCpy((char*)x, src, 64, reserve);
+    reserve -= writeLen;
+    src += writeLen;
+
     for(int i = 0; i < len/64; i++){//循环运算直至文件结束
         md5();
         memset(x,0,64);
-        fread(&x,4,16,fp);
+        writeLen = strCpy((char*)x, src, 64, reserve);
+        reserve -= writeLen;
+        src += writeLen;
     }
-
-    /**
-     * 考虑有两种情况 ：
-     *  * len % 64 >= 56 补一个1，之后都补零，再另起一个64字节
-     *  * len % 64 < 56 补一个1，之后补零即可
-     *  但其实这三种情况都不影响，因为最终都会用文件长度覆盖最后的8个字节
-     */
-    ((char*)x)[len%64]=128;  //文件结束补1,补0操作,128二进制即10000000
-    if(len%64>55) {
+    ((char*)x)[len % 64]=128;  //文件结束补1,补0操作,128二进制即10000000
+    if(len % 64 > 55) {
         md5();
         memset(x, 0, 64);
     }
     memcpy(x+14,flen,8);    //文件末尾加入原文件的bit长度
     md5();
-    fclose(fp);
-    printf("MD5 Code:%08x%08x%08x%08x\n",PP(A),PP(B),PP(C),PP(D));  //高低位逆反输出
-    return 0;
-}
-#endif
 
-int main(){
-    char* src = "123456ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss";
-    int len = strlen(src);
-    unsigned int res[4];
-    Md5(src, len, res);
-    if(NULL == res)
-        printf("error in %d\n", __LINE__);
-    else
-        printf("MD5: %08x%08x%08x%08x\n", res[0], res[1], res[2], res[3]);
-
-    return 0;
+    *(res) = PP(A);
+    *(res+1) = PP(B);
+    *(res+2) = PP(C);
+    *(res+3) = PP(D);
 }
