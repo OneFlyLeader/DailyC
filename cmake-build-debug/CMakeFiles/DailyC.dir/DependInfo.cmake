@@ -4,7 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "C:/Users/OneFl/Documents/GitHub/DailyC/system/endian.c" "C:/Users/OneFl/Documents/GitHub/DailyC/cmake-build-debug/CMakeFiles/DailyC.dir/system/endian.c.obj"
+  "C:/Users/OneFl/Documents/GitHub/DailyC/md5/md5.c" "C:/Users/OneFl/Documents/GitHub/DailyC/cmake-build-debug/CMakeFiles/DailyC.dir/md5/md5.c.obj"
+  "C:/Users/OneFl/Documents/GitHub/DailyC/md5/md5Main.c" "C:/Users/OneFl/Documents/GitHub/DailyC/cmake-build-debug/CMakeFiles/DailyC.dir/md5/md5Main.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

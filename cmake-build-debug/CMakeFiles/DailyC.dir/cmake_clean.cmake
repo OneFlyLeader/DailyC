@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/DailyC.dir/system/endian.c.obj"
+  "CMakeFiles/DailyC.dir/md5/md5.c.obj"
+  "CMakeFiles/DailyC.dir/md5/md5Main.c.obj"
   "DailyC.exe"
   "DailyC.exe.manifest"
   "DailyC.pdb"

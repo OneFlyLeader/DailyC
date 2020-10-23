@@ -76,7 +76,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/OneFl/Documents/GitHub/DailyC/system/endian.c">
+		<Unit filename="C:/Users/OneFl/Documents/GitHub/DailyC/md5/md5.c">
+			<Option target="DailyC"/>
+		</Unit>
+		<Unit filename="C:/Users/OneFl/Documents/GitHub/DailyC/md5/md5.h">
+			<Option target="DailyC"/>
+		</Unit>
+		<Unit filename="C:/Users/OneFl/Documents/GitHub/DailyC/md5/md5Main.c">
 			<Option target="DailyC"/>
 		</Unit>
 		<Unit filename="C:/Users/OneFl/Documents/GitHub/DailyC/CMakeLists.txt">

@@ -142,10 +142,10 @@ void Md5(char* head, const unsigned int len, unsigned int* res){
 
     for(int i = 0; i < len/64; i++){//循环运算直至文件结束
         md5();
+        memset(x,0,64);
         writeLen = strCpy((char*)x, src, 64, reserve);
         reserve -= writeLen;
         src += writeLen;
-        memset(x,0,64);
     }
     ((char*)x)[len % 64]=128;  //文件结束补1,补0操作,128二进制即10000000
     if(len % 64 > 55) {
