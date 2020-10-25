@@ -30,4 +30,7 @@ set(PROJECT_NAME DailyC)
 #add_executable(${PROJECT_NAME} system/endian.c)
 
 # 测试可变宏
-add_executable(${PROJECT_NAME} system/VariableArgs.c)
+#add_executable(${PROJECT_NAME} system/VariableArgs.c)
+
+# 测试函数指针
+add_executable(${PROJECT_NAME} system/funcPtr.c)
