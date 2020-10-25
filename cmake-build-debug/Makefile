@@ -142,113 +142,32 @@ DailyC/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/build
 .PHONY : DailyC/fast
 
-oop/main.obj: oop/main.c.obj
+system/VariableArgs.obj: system/VariableArgs.c.obj
 
-.PHONY : oop/main.obj
-
-# target to build an object file
-oop/main.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/oop/main.c.obj
-.PHONY : oop/main.c.obj
-
-oop/main.i: oop/main.c.i
-
-.PHONY : oop/main.i
-
-# target to preprocess a source file
-oop/main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/oop/main.c.i
-.PHONY : oop/main.c.i
-
-oop/main.s: oop/main.c.s
-
-.PHONY : oop/main.s
-
-# target to generate assembly for a file
-oop/main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/oop/main.c.s
-.PHONY : oop/main.c.s
-
-oop/person.obj: oop/person.c.obj
-
-.PHONY : oop/person.obj
+.PHONY : system/VariableArgs.obj
 
 # target to build an object file
-oop/person.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/oop/person.c.obj
-.PHONY : oop/person.c.obj
+system/VariableArgs.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/system/VariableArgs.c.obj
+.PHONY : system/VariableArgs.c.obj
 
-oop/person.i: oop/person.c.i
+system/VariableArgs.i: system/VariableArgs.c.i
 
-.PHONY : oop/person.i
-
-# target to preprocess a source file
-oop/person.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/oop/person.c.i
-.PHONY : oop/person.c.i
-
-oop/person.s: oop/person.c.s
-
-.PHONY : oop/person.s
-
-# target to generate assembly for a file
-oop/person.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/oop/person.c.s
-.PHONY : oop/person.c.s
-
-oop/senior.obj: oop/senior.c.obj
-
-.PHONY : oop/senior.obj
-
-# target to build an object file
-oop/senior.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/oop/senior.c.obj
-.PHONY : oop/senior.c.obj
-
-oop/senior.i: oop/senior.c.i
-
-.PHONY : oop/senior.i
+.PHONY : system/VariableArgs.i
 
 # target to preprocess a source file
-oop/senior.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/oop/senior.c.i
-.PHONY : oop/senior.c.i
+system/VariableArgs.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/system/VariableArgs.c.i
+.PHONY : system/VariableArgs.c.i
 
-oop/senior.s: oop/senior.c.s
+system/VariableArgs.s: system/VariableArgs.c.s
 
-.PHONY : oop/senior.s
-
-# target to generate assembly for a file
-oop/senior.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/oop/senior.c.s
-.PHONY : oop/senior.c.s
-
-oop/student.obj: oop/student.c.obj
-
-.PHONY : oop/student.obj
-
-# target to build an object file
-oop/student.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/oop/student.c.obj
-.PHONY : oop/student.c.obj
-
-oop/student.i: oop/student.c.i
-
-.PHONY : oop/student.i
-
-# target to preprocess a source file
-oop/student.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/oop/student.c.i
-.PHONY : oop/student.c.i
-
-oop/student.s: oop/student.c.s
-
-.PHONY : oop/student.s
+.PHONY : system/VariableArgs.s
 
 # target to generate assembly for a file
-oop/student.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/oop/student.c.s
-.PHONY : oop/student.c.s
+system/VariableArgs.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DailyC.dir\build.make CMakeFiles/DailyC.dir/system/VariableArgs.c.s
+.PHONY : system/VariableArgs.c.s
 
 # Help Target
 help:
@@ -259,18 +178,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... DailyC
-	@echo ... oop/main.obj
-	@echo ... oop/main.i
-	@echo ... oop/main.s
-	@echo ... oop/person.obj
-	@echo ... oop/person.i
-	@echo ... oop/person.s
-	@echo ... oop/senior.obj
-	@echo ... oop/senior.i
-	@echo ... oop/senior.s
-	@echo ... oop/student.obj
-	@echo ... oop/student.i
-	@echo ... oop/student.s
+	@echo ... system/VariableArgs.obj
+	@echo ... system/VariableArgs.i
+	@echo ... system/VariableArgs.s
 .PHONY : help
 
 

@@ -1,8 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/DailyC.dir/oop/main.c.obj"
-  "CMakeFiles/DailyC.dir/oop/person.c.obj"
-  "CMakeFiles/DailyC.dir/oop/senior.c.obj"
-  "CMakeFiles/DailyC.dir/oop/student.c.obj"
+  "CMakeFiles/DailyC.dir/system/VariableArgs.c.obj"
   "DailyC.exe"
   "DailyC.exe.manifest"
   "DailyC.pdb"

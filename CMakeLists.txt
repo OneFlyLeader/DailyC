@@ -20,11 +20,14 @@ set(PROJECT_NAME DailyC)
 #add_executable(${PROJECT_NAME} md5/md5Main.c md5/md5_little.c md5/md5_little.h)
 
 # 测试OOP
-set(PERSON oop/person.h oop/person.c)
-set(STUDENT oop/student.h oop/student.c)
-set(SENIOR oop/senior.h oop/senior.c)
-set(ALL ${PERSON} ${STUDENT} ${SENIOR})
-add_executable(${PROJECT_NAME} oop/main.c ${ALL})
+#set(PERSON oop/person.h oop/person.c)
+#set(STUDENT oop/student.h oop/student.c)
+#set(SENIOR oop/senior.h oop/senior.c)
+#set(ALL ${PERSON} ${STUDENT} ${SENIOR})
+#add_executable(${PROJECT_NAME} oop/main.c ${ALL})
 
 # 测试大小端
 #add_executable(${PROJECT_NAME} system/endian.c)
+
+# 测试可变宏
+add_executable(${PROJECT_NAME} system/VariableArgs.c)

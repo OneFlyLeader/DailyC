@@ -6,23 +6,9 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/OneFl/Documents/GitHub/DailyC/oop/main.c
-person.h
-C:/Users/OneFl/Documents/GitHub/DailyC/oop/person.h
-student.h
-C:/Users/OneFl/Documents/GitHub/DailyC/oop/student.h
-senior.h
-C:/Users/OneFl/Documents/GitHub/DailyC/oop/senior.h
+C:/Users/OneFl/Documents/GitHub/DailyC/system/VariableArgs.c
+stdarg.h
+-
 stdio.h
 -
-
-C:/Users/OneFl/Documents/GitHub/DailyC/oop/person.h
-
-C:/Users/OneFl/Documents/GitHub/DailyC/oop/senior.h
-student.h
-C:/Users/OneFl/Documents/GitHub/DailyC/oop/student.h
-
-C:/Users/OneFl/Documents/GitHub/DailyC/oop/student.h
-person.h
-C:/Users/OneFl/Documents/GitHub/DailyC/oop/person.h
 
